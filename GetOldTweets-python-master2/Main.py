@@ -21,7 +21,7 @@ def main():
 	printTweet("### Example 1 - Get tweets by username [barackobama]", tweet)
 
 	# Example 2 - Get tweets by query search
-	tweetCriteria = got.manager.TweetCriteria().setQuerySearch('etherium').setSince("2018-01-28").setUntil("2018-02-9").setMaxTweets(15)
+	tweetCriteria = got.manager.TweetCriteria().setQuerySearch('ethereum').setSince("2018-01-28").setUntil("2018-02-9").setMaxTweets(15)
 	tweet = got.manager.TweetManager.getTweets(tweetCriteria)[0]
 
 	printTweet("### Example 2 - Get tweets by query search [ethereum]", tweet)
